@@ -7,7 +7,7 @@ app = Flask(__name__)
 def yin_yang():
     return random.choice(['yin', 'yang'])
 
-@app.route('/get.fortune', methods=['POST'])
+@app.route('/get_fortune', methods=['POST'])
 def get_fortune():
     
     fortunes = 
