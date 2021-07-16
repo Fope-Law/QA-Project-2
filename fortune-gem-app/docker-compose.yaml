@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  server:
+    container_name: fortune_gem_server 
+    image: fortune_gem_server 
+    deploy:
+      replicas: 3
+    ports:
+    - published: 2021
+      target: 2021
+  
+      yinyang_api:
+    container_name: yinyang_api 
+    image: yinyang_api 
+    build: ./yinyang_api
+    deploy:
+      replicas: 3
+    ports:
+    - published: 2021
+      target: 2021

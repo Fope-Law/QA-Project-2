@@ -1,11 +1,19 @@
 from flask import Flask, request
-import requests, random
+import requests, random, time
 
 app = Flask(__name__)
 
 @app.route('/yin_yang', methods=['GET'])
 def yin_yang():
-    return random.choice(['yin', 'yang'])
+    
+    crunchtime = time.localtime()
+
+    if ((crunchtime.tm_hour >= 5) & (crunchtime.tm_min >= 0)):
+        if((crunchtime.tm_hour <= 16) & (crunchtime.tm_min <= 59)):
+            
+            return 'yin'
+        else:
+            return 'yang'
 
 @app.route('/get_fortune', methods=['POST'])
 def get_fortune():
