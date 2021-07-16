@@ -11,7 +11,7 @@ def yin_yang():
 def get_fortune():
     
     fortunes = {"yin":["You will receive good news in the next few days.", "Your shower singing will take you to great heights.", "You will learn to cook an amazing meal this month.", "People will criticise you for trying but you will learn a new skill this month."], 
-    "yang":["You will have to work overtime soon...", "Your socks will not match for the next week...", "You will not get enough sleep this Saturday...","You will be called a fool in your time of greatest need..."]}
+    "yang":["You will have to work overtime soon...", "Your socks will not match for the next week...", "You will not get enough sleep this Saturday...","You will be labelled a fool in your time of greatest need..."]}
     
     return random.choice(fortunes[request.data.decode('utf-8')])
 

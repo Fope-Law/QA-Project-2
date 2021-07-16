@@ -1,7 +1,8 @@
 flask 
-flask-testing 
+flask_testing 
 pytest==6.2.4
 pytest-cov 
 requests 
+requests_mock
 Werkzeug==0.16.1
 mock
