@@ -1,6 +1,6 @@
 pipeline{
-    agent{any}
-        docker { 
+    agent{
+        any { 
                 args "--user root --privileged"
                 }
             stages{
