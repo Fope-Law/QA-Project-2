@@ -1,0 +1,9 @@
+flask==1.1.1
+flask-testing 
+pytest==6.2.4
+pytest-cov 
+requests 
+requests-mock
+Werkzeug==0.16.1
+mock
+datetime
