@@ -9,5 +9,7 @@ I initially wanted all three of the functions I created to be used as separate a
 
 The web app for this project is more streamlined than the first, and possibly simpler, but there is a lot more happening in the backend of the app. 
 
-I created two dictionaries, which are dependent on two keys, 'yin' and 'yang'.
+I created two dictionaries, which are dependent on two keys, 'yin' and 'yang'. The app can be run via Docker, Jenkins, Ansible, and all three together, which helps to make the code and app more efficient. Docker in particular allows the use of replicas, which helps with the load balancing of the app. 
+
+Nginx was implemented in order to assist with load balancing and swarm activity. Using multiple worker nodes with this application helps to ensure that any disconnections are reduced to a minimum. 
 
