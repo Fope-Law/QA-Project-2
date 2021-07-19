@@ -1,8 +1,9 @@
 pipeline{
     agent {
         docker { 
-            args "--user root --privileged"}
-                {stages{
+            args "--user root --privileged"
+            }
+            stages{
                     stage('Compose Docker images'){
                         steps{
                             sh "docker-compose build"
