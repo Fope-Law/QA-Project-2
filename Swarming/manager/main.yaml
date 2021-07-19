@@ -1,0 +1,3 @@
+- name: Initialise Swarm
+  community.docker.docker_swarm
+    state: present
