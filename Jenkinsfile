@@ -1,11 +1,10 @@
 pipeline{
-        agent{any}
-            stage{ 
-                docker { 
+    agent{any}
+        docker { 
                 args "--user root --privileged"
                 }
-                stages{
-                        stage('Compose Docker images'){
+            stages{
+                stage('Compose Docker images'){
                             steps{
                                 sh "docker-compose build"
                             }

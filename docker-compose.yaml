@@ -21,3 +21,4 @@ services:
     ports:
     - published: 80
       target: 80
+
