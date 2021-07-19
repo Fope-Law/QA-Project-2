@@ -1,5 +1,6 @@
-pipeline{
-    agent{      any
+// declarative pipeline
+pipeline {
+    agent any
          { 
                 args "--user root --privileged"
                 }
