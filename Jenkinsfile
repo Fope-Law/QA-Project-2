@@ -1,7 +1,7 @@
 // declarative pipeline
 pipeline {
-    agent any
-         { args "--user root --privileged"
+    agent any;
+        args "--user root --privileged";
             stages{
                 stage('Compose Docker images'){
                             steps{
@@ -15,4 +15,3 @@ pipeline {
                     }
                 }
             }
-        }
