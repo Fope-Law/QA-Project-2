@@ -1,19 +1,21 @@
-pipeline{
-    agent {any
-        docker { 
-            args "--user root --privileged"
-            }
-            stages{
-                    stage('Compose Docker images'){
-                        steps{
-                            sh "docker-compose build"
+stages{
+    pipeline{
+        agent {any
+            docker { 
+                args "--user root --privileged"
+                }
+                stages{
+                        stage('Compose Docker images'){
+                            steps{
+                                sh "docker-compose build"
+                            }
                         }
-                    }
-                    stage('Deploy Docker stack'){
-                        steps{
-                            sh "docker stack deploy --compose-file docker-compose.yaml stack"
+                        stage('Deploy Docker stack'){
+                            steps{
+                                sh "docker stack deploy --compose-file docker-compose.yaml stack"
+                        }
                     }
                 }
             }
         }
-    }
+}
