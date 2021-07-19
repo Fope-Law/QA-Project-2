@@ -1,6 +1,6 @@
 Second project with QA
 
-
+https://trello.com/b/2sGJAUXw/project-2
 
 This project consists of information a fortune telling app, which also provides the user with a lucky gemstone that they can cherish and research for themselves. The fortunes and the gems themselves are actually dependant on the time that the user has accessed the web app; during nighttime the fortunes become a lot more ominous! 
 The initial server will perform a GET request, which will help to determine the two post requests. The final statement on the webpage will provide the user with a combination of a lucky gem and a fortune, depending on the time of day. Bad omens at night will force the app to provide the user from a selection of the most lucky gemstones. 
